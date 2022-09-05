@@ -1,0 +1,28 @@
+Base kinds of DATABASE and tiny description.
+
+1. Key-Value Database - Redis, Memcached, etcd
+#Like JSON, SET(to add value), GET(to retrieve), data held in machine memory not on hard disk. Thus, Superfast and mainly used for cache, PUB/SUB etc.
+
+2. Wide Column Database - Cassandra, Hbase
+# Handles unstructured data, uses CQL(Contextual Query Language), mainly for storing history etc.
+
+3. Document Oriented Database - MongoDB, Firestore etc.
+# JSON unstructured document
+
+4. Relational Database - MySQL, PostgreSQL etc.
+# Uses SQL and also ACID compliant
+Cockroach Labs - More optimized for scalability
+
+5. Graph - Neo4j, Dgraph
+# Uses Cypher for querying, often used in building knowledge base, recommendation engine etc.
+
+6. Search Engine - elastic, Solr(Most of them are on the top of Apache lucene project)
+Cloud Based - Algolia, MeiliSearch
+# These are Full Text database. An index like in the back of the book is created. On search, an index is searched on the object.
+
+7. Multi-Model Database - FaunaDB
+Uses GraphQL
+# Just define how want to consume data, and it will automatically figure out how to take the best advantage of all paradigms.
+The best.
+
+Other data warehouse, time-series
